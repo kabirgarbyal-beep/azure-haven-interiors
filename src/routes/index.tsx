@@ -1,29 +1,38 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
+import siteBody from "../site-body.html?raw";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Maison Lumière — Luxury Interior Design Atelier" },
+      { name: "description", content: "Maison Lumière is a luxury interior design atelier crafting villas, penthouses and signature residences with architectural elegance." },
+      { property: "og:title", content: "Maison Lumière — Luxury Interior Atelier" },
+      { property: "og:description", content: "Architectural interiors for villas, penthouses and signature residences." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Maison Lumière — Luxury Interior Atelier" },
+      { name: "twitter:description", content: "Architectural interiors for villas, penthouses and signature residences." },
+    ],
+    links: [
+      { rel: "stylesheet", href: "/luxe.css" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.src = "/luxe.js";
+    s.defer = true;
+    document.body.appendChild(s);
+    return () => {
+      s.remove();
+    };
+  }, []);
+  return <div dangerouslySetInnerHTML={{ __html: siteBody }} />;
 }
