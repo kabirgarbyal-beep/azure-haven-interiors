@@ -17,7 +17,8 @@
     if (p < 100) setTimeout(tick, 90 + Math.random() * 120);
     else setTimeout(() => loader.classList.add('is-done'), 350);
   };
-  window.addEventListener('load', tick);
+  if (document.readyState === 'complete') tick();
+  else window.addEventListener('load', tick, { once: true });
 
   /* ---------- Scroll progress ---------- */
   const sp = $('#scrollProgress');
