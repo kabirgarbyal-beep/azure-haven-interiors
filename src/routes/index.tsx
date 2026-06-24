@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import siteBody from "../site-body.html?raw";
-import luxeCssUrl from "../luxe.css?url";
-import luxeJsUrl from "../luxe.js?url";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,7 +15,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:description", content: "Architectural interiors for villas, penthouses and signature residences." },
     ],
     links: [
-      { rel: "stylesheet", href: luxeCssUrl },
+      { rel: "stylesheet", href: "/luxe.css" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" },
@@ -29,7 +27,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   useEffect(() => {
     const s = document.createElement("script");
-    s.src = luxeJsUrl;
+    s.src = "/luxe.js";
     s.defer = true;
     document.body.appendChild(s);
     return () => {
