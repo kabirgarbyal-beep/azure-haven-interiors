@@ -1,369 +1,539 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Maison Lumière — Luxury Interior Design Atelier</title>
-<meta name="description" content="Maison Lumière is a luxury interior design atelier crafting villas, penthouses and signature residences with architectural elegance." />
-<meta property="og:title" content="Maison Lumière — Luxury Interior Atelier" />
-<meta property="og:description" content="Architectural interiors for villas, penthouses and signature residences." />
-<meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<!-- Page loader -->
-<div class="loader" id="loader" aria-hidden="true">
-  <div class="loader__inner">
-    <div class="loader__brand">
-      <span class="loader__mark">ML</span>
-      <span class="loader__name">Maison Lumière</span>
-    </div>
-    <div class="loader__bar"><span></span></div>
-    <div class="loader__meta"><span>Atelier d'Architecture Intérieure</span><span id="loaderPct">0%</span></div>
-  </div>
-</div>
-
-<!-- Scroll progress -->
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
-<!-- Custom cursor -->
-<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
-<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-
-<!-- Floating ambient particles -->
-<div class="particles" id="particles" aria-hidden="true"></div>
-
-<!-- Nav -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="#top" class="nav__brand" data-magnetic>
-      <span class="nav__mark">ML</span>
-      <span class="nav__word">Maison Lumière</span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#studio">Studio</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a href="#transform">Transformations</a>
-      <a href="#journal">Journal</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="#contact" class="btn btn--glass" data-magnetic>
-      <span>Book consultation</span>
-      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-    </a>
-    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
-  </div>
-</header>
-
-<main id="top">
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__bg">
-    <div class="hero__grid"></div>
-    <svg class="blueprint" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
-      <g fill="none" stroke="rgba(170,200,255,.22)" stroke-width="1">
-        <path class="bp-line" d="M120 780 L120 220 L640 220 L640 540 L1100 540 L1100 160 L1320 160"/>
-        <path class="bp-line" d="M120 540 L640 540"/>
-        <path class="bp-line" d="M400 780 L400 220"/>
-        <path class="bp-line" d="M860 780 L860 540"/>
-        <circle class="bp-dot" cx="120" cy="220" r="3" fill="rgba(170,200,255,.6)"/>
-        <circle class="bp-dot" cx="640" cy="540" r="3" fill="rgba(170,200,255,.6)"/>
-        <circle class="bp-dot" cx="1100" cy="160" r="3" fill="rgba(170,200,255,.6)"/>
-      </g>
-    </svg>
-    <div class="hero__glow hero__glow--a"></div>
-    <div class="hero__glow hero__glow--b"></div>
-  </div>
-
-  <div class="hero__inner">
-    <div class="eyebrow reveal"><span class="dot"></span> Atelier · Est. 2009 · Mumbai / Milan</div>
-    <h1 class="hero__title">
-      <span class="line"><span class="line__inner">Quiet</span></span>
-      <span class="line"><span class="line__inner"><em>luxury,</em></span></span>
-      <span class="line"><span class="line__inner">architected</span></span>
-      <span class="line"><span class="line__inner">in light.</span></span>
-    </h1>
-    <p class="hero__lede reveal">A residential atelier designing villas, penthouses and signature homes for a generation that values restraint over noise — and craft above all.</p>
-    <div class="hero__cta reveal">
-      <a class="btn btn--primary" href="#contact" data-magnetic><span>Begin a project</span></a>
-      <a class="btn btn--ghost" href="#work" data-magnetic><span>See selected work</span></a>
-    </div>
-    <div class="hero__meta reveal">
-      <div><strong>147</strong><span>Residences delivered</span></div>
-      <div><strong>22</strong><span>Cities, four continents</span></div>
-      <div><strong>17</strong><span>International awards</span></div>
-    </div>
-  </div>
-
-  <div class="hero__scroll reveal" aria-hidden="true"><span>Scroll</span><i></i></div>
-</section>
-
-<!-- MARQUEE -->
-<section class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>Architectural Digest</span><span>·</span>
-    <span>Elle Decor</span><span>·</span>
-    <span>Wallpaper*</span><span>·</span>
-    <span>AD100 2024</span><span>·</span>
-    <span>Dezeen</span><span>·</span>
-    <span>Frame</span><span>·</span>
-    <span>Architectural Digest</span><span>·</span>
-    <span>Elle Decor</span><span>·</span>
-    <span>Wallpaper*</span><span>·</span>
-    <span>AD100 2024</span><span>·</span>
-    <span>Dezeen</span><span>·</span>
-    <span>Frame</span><span>·</span>
-  </div>
-</section>
-
-<!-- STUDIO -->
-<section id="studio" class="studio section">
-  <div class="section__head">
-    <span class="section__num">01 — Studio</span>
-    <h2 class="section__title reveal-words">A studio devoted to the discipline of stillness.</h2>
-  </div>
-  <div class="studio__grid">
-    <div class="studio__copy reveal">
-      <p>For seventeen years Maison Lumière has worked at the intersection of architecture, material research and the intimate scale of domestic life. Our practice is small by design — fewer than a dozen projects each year, each treated as a singular commission.</p>
-      <p>We collaborate with quiet patrons, principal architects and the finest ateliers in Europe and India: stone-cutters in Carrara, joiners in Jodhpur, lacquer specialists in Kyoto.</p>
-      <ul class="studio__list">
-        <li><span>—</span> Residential & private architecture</li>
-        <li><span>—</span> Hospitality & boutique commercial</li>
-        <li><span>—</span> Custom furniture & material direction</li>
-        <li><span>—</span> Art curation & lighting design</li>
-      </ul>
-    </div>
-    <figure class="studio__media reveal-mask">
-      <div class="mask-img" style="background-image:linear-gradient(135deg,#0c2a55,#1a4a8c 50%,#cfd8e6)"></div>
-      <figcaption>Studio interior — Bandra West, 2024</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- FEATURED WORK -->
-<section id="work" class="work section">
-  <div class="section__head">
-    <span class="section__num">02 — Selected Work</span>
-    <h2 class="section__title reveal-words">Residences built to outlast the trend cycle.</h2>
-  </div>
-
-  <div class="work__grid">
-    <a class="card" href="#" data-tilt>
-      <div class="card__img" style="background:radial-gradient(120% 80% at 20% 10%,#2a5fae,#071a35 70%)"></div>
-      <div class="card__overlay">
-        <div class="card__meta"><span>Villa</span><span>Alibaug · 2024</span></div>
-        <h3 class="card__title">Maison Côte d'Or</h3>
-        <p>A coastal villa of bleached oak, raw plaster and Indian basalt — composed around a single courtyard of water.</p>
-        <span class="card__cta">View project →</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Maison Lumière — Luxury Interior Design Atelier</title>
+    <meta
+      name="description"
+      content="Maison Lumière is a luxury interior design atelier crafting villas, penthouses and signature residences with architectural elegance."
+    />
+    <meta property="og:title" content="Maison Lumière — Luxury Interior Atelier" />
+    <meta
+      property="og:description"
+      content="Architectural interiors for villas, penthouses and signature residences."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <div class="loader__brand">
+          <span class="loader__mark">ML</span>
+          <span class="loader__name">Maison Lumière</span>
+        </div>
+        <div class="loader__bar"><span></span></div>
+        <div class="loader__meta">
+          <span>Atelier d'Architecture Intérieure</span><span id="loaderPct">0%</span>
+        </div>
       </div>
-    </a>
-    <a class="card" href="#" data-tilt>
-      <div class="card__img" style="background:radial-gradient(120% 80% at 80% 20%,#3a7bd5,#0a1f3d 70%)"></div>
-      <div class="card__overlay">
-        <div class="card__meta"><span>Penthouse</span><span>Worli · 2023</span></div>
-        <h3 class="card__title">The Atrium Residence</h3>
-        <p>A duplex sky-residence framed by a 9-metre cantilevered library and a private observatory.</p>
-        <span class="card__cta">View project →</span>
+    </div>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <!-- Floating ambient particles -->
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- Nav -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#top" class="nav__brand" data-magnetic>
+          <span class="nav__mark">ML</span>
+          <span class="nav__word">Maison Lumière</span>
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#studio">Studio</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#transform">Transformations</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn--glass" data-magnetic>
+          <span>Book consultation</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Menu">
+          <span></span><span></span>
+        </button>
       </div>
-    </a>
-    <a class="card" href="#" data-tilt>
-      <div class="card__img" style="background:radial-gradient(120% 80% at 50% 80%,#5c8fd6,#0c264f 70%)"></div>
-      <div class="card__overlay">
-        <div class="card__meta"><span>Apartment</span><span>Knightsbridge · 2023</span></div>
-        <h3 class="card__title">Belgrave House</h3>
-        <p>A London pied-à-terre of fluted marble, brushed nickel and a quiet, deliberate palette of greys.</p>
-        <span class="card__cta">View project →</span>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__bg">
+          <div class="hero__grid"></div>
+          <svg
+            class="blueprint"
+            viewBox="0 0 1440 900"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <g fill="none" stroke="rgba(170,200,255,.22)" stroke-width="1">
+              <path
+                class="bp-line"
+                d="M120 780 L120 220 L640 220 L640 540 L1100 540 L1100 160 L1320 160"
+              />
+              <path class="bp-line" d="M120 540 L640 540" />
+              <path class="bp-line" d="M400 780 L400 220" />
+              <path class="bp-line" d="M860 780 L860 540" />
+              <circle class="bp-dot" cx="120" cy="220" r="3" fill="rgba(170,200,255,.6)" />
+              <circle class="bp-dot" cx="640" cy="540" r="3" fill="rgba(170,200,255,.6)" />
+              <circle class="bp-dot" cx="1100" cy="160" r="3" fill="rgba(170,200,255,.6)" />
+            </g>
+          </svg>
+          <div class="hero__glow hero__glow--a"></div>
+          <div class="hero__glow hero__glow--b"></div>
+        </div>
+
+        <div class="hero__inner">
+          <div class="eyebrow reveal">
+            <span class="dot"></span> Atelier · Est. 2009 · Mumbai / Milan
+          </div>
+          <h1 class="hero__title">
+            <span class="line"><span class="line__inner">Quiet</span></span>
+            <span class="line"
+              ><span class="line__inner"><em>luxury,</em></span></span
+            >
+            <span class="line"><span class="line__inner">architected</span></span>
+            <span class="line"><span class="line__inner">in light.</span></span>
+          </h1>
+          <p class="hero__lede reveal">
+            A residential atelier designing villas, penthouses and signature homes for a generation
+            that values restraint over noise — and craft above all.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#contact" data-magnetic
+              ><span>Begin a project</span></a
+            >
+            <a class="btn btn--ghost" href="#work" data-magnetic><span>See selected work</span></a>
+          </div>
+          <div class="hero__meta reveal">
+            <div><strong>147</strong><span>Residences delivered</span></div>
+            <div><strong>22</strong><span>Cities, four continents</span></div>
+            <div><strong>17</strong><span>International awards</span></div>
+          </div>
+        </div>
+
+        <div class="hero__scroll reveal" aria-hidden="true"><span>Scroll</span><i></i></div>
+      </section>
+
+      <!-- MARQUEE -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Architectural Digest</span><span>·</span> <span>Elle Decor</span><span>·</span>
+          <span>Wallpaper*</span><span>·</span> <span>AD100 2024</span><span>·</span>
+          <span>Dezeen</span><span>·</span> <span>Frame</span><span>·</span>
+          <span>Architectural Digest</span><span>·</span> <span>Elle Decor</span><span>·</span>
+          <span>Wallpaper*</span><span>·</span> <span>AD100 2024</span><span>·</span>
+          <span>Dezeen</span><span>·</span> <span>Frame</span><span>·</span>
+        </div>
+      </section>
+
+      <!-- STUDIO -->
+      <section id="studio" class="studio section">
+        <div class="section__head">
+          <span class="section__num">01 — Studio</span>
+          <h2 class="section__title reveal-words">
+            A studio devoted to the discipline of stillness.
+          </h2>
+        </div>
+        <div class="studio__grid">
+          <div class="studio__copy reveal">
+            <p>
+              For seventeen years Maison Lumière has worked at the intersection of architecture,
+              material research and the intimate scale of domestic life. Our practice is small by
+              design — fewer than a dozen projects each year, each treated as a singular commission.
+            </p>
+            <p>
+              We collaborate with quiet patrons, principal architects and the finest ateliers in
+              Europe and India: stone-cutters in Carrara, joiners in Jodhpur, lacquer specialists in
+              Kyoto.
+            </p>
+            <ul class="studio__list">
+              <li><span>—</span> Residential & private architecture</li>
+              <li><span>—</span> Hospitality & boutique commercial</li>
+              <li><span>—</span> Custom furniture & material direction</li>
+              <li><span>—</span> Art curation & lighting design</li>
+            </ul>
+          </div>
+          <figure class="studio__media reveal-mask">
+            <div
+              class="mask-img"
+              style="background-image: linear-gradient(135deg, #0c2a55, #1a4a8c 50%, #cfd8e6)"
+            ></div>
+            <figcaption>Studio interior — Bandra West, 2024</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- FEATURED WORK -->
+      <section id="work" class="work section">
+        <div class="section__head">
+          <span class="section__num">02 — Selected Work</span>
+          <h2 class="section__title reveal-words">Residences built to outlast the trend cycle.</h2>
+        </div>
+
+        <div class="work__grid">
+          <a class="card" href="#" data-tilt>
+            <div
+              class="card__img"
+              style="background: radial-gradient(120% 80% at 20% 10%, #2a5fae, #071a35 70%)"
+            ></div>
+            <div class="card__overlay">
+              <div class="card__meta"><span>Villa</span><span>Alibaug · 2024</span></div>
+              <h3 class="card__title">Maison Côte d'Or</h3>
+              <p>
+                A coastal villa of bleached oak, raw plaster and Indian basalt — composed around a
+                single courtyard of water.
+              </p>
+              <span class="card__cta">View project →</span>
+            </div>
+          </a>
+          <a class="card" href="#" data-tilt>
+            <div
+              class="card__img"
+              style="background: radial-gradient(120% 80% at 80% 20%, #3a7bd5, #0a1f3d 70%)"
+            ></div>
+            <div class="card__overlay">
+              <div class="card__meta"><span>Penthouse</span><span>Worli · 2023</span></div>
+              <h3 class="card__title">The Atrium Residence</h3>
+              <p>
+                A duplex sky-residence framed by a 9-metre cantilevered library and a private
+                observatory.
+              </p>
+              <span class="card__cta">View project →</span>
+            </div>
+          </a>
+          <a class="card" href="#" data-tilt>
+            <div
+              class="card__img"
+              style="background: radial-gradient(120% 80% at 50% 80%, #5c8fd6, #0c264f 70%)"
+            ></div>
+            <div class="card__overlay">
+              <div class="card__meta"><span>Apartment</span><span>Knightsbridge · 2023</span></div>
+              <h3 class="card__title">Belgrave House</h3>
+              <p>
+                A London pied-à-terre of fluted marble, brushed nickel and a quiet, deliberate
+                palette of greys.
+              </p>
+              <span class="card__cta">View project →</span>
+            </div>
+          </a>
+          <a class="card card--wide" href="#" data-tilt>
+            <div
+              class="card__img"
+              style="background: radial-gradient(120% 80% at 30% 30%, #4f86c6, #06152c 75%)"
+            ></div>
+            <div class="card__overlay">
+              <div class="card__meta"><span>Hospitality</span><span>Udaipur · 2022</span></div>
+              <h3 class="card__title">Hôtel Particulier — Lake Wing</h3>
+              <p>
+                Twelve suites carved into a 19th-century haveli, restored stone by stone with a
+                contemporary, monastic interior.
+              </p>
+              <span class="card__cta">View project →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section id="process" class="process section">
+        <div class="section__head">
+          <span class="section__num">03 — Process</span>
+          <h2 class="section__title reveal-words">Four chapters. One quiet conversation.</h2>
+        </div>
+        <ol class="process__list">
+          <li class="process__item reveal">
+            <span class="process__num">i.</span>
+            <h3>Discovery</h3>
+            <p>
+              A private conversation at your residence. We listen — to how you live, host, retreat,
+              collect.
+            </p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__num">ii.</span>
+            <h3>Architecture of Intent</h3>
+            <p>
+              A written brief, a material atlas and the first spatial diagrams. Nothing decorative —
+              yet.
+            </p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__num">iii.</span>
+            <h3>Atelier</h3>
+            <p>
+              Custom joinery, lighting and stone are prototyped in our workshop. Samples travel to
+              you.
+            </p>
+          </li>
+          <li class="process__item reveal">
+            <span class="process__num">iv.</span>
+            <h3>Installation</h3>
+            <p>
+              A single project lead is on site daily. We hand over a home that is fully styled and
+              ready to live in.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- BEFORE / AFTER -->
+      <section id="transform" class="transform section">
+        <div class="section__head">
+          <span class="section__num">04 — Transformations</span>
+          <h2 class="section__title reveal-words">Before. And quietly, after.</h2>
+        </div>
+        <div class="compare reveal" id="compare">
+          <div
+            class="compare__img compare__img--before"
+            style="background: linear-gradient(135deg, #3a3a3a, #7a7a7a)"
+          ></div>
+          <div
+            class="compare__img compare__img--after"
+            id="compareAfter"
+            style="background: linear-gradient(135deg, #0a2147, #3672c4 60%, #dfe7f2)"
+          ></div>
+          <div class="compare__handle" id="compareHandle"><span></span><i></i></div>
+          <span class="compare__tag compare__tag--l">Before</span>
+          <span class="compare__tag compare__tag--r">After</span>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats section">
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <span class="stat__num" data-count="147">0</span
+            ><span class="stat__label">Residences delivered</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="22">0</span
+            ><span class="stat__label">Cities worldwide</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="17">0</span
+            ><span class="stat__label">International awards</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__num" data-count="98" data-suffix="%">0</span
+            ><span class="stat__label">Referral commissions</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="quotes section">
+        <div class="section__head">
+          <span class="section__num">05 — Voices</span>
+          <h2 class="section__title reveal-words">What our patrons say, quietly.</h2>
+        </div>
+        <div class="quotes__stage" id="quotes">
+          <div class="quote is-active">
+            <p>
+              “They designed a house we did not know we wanted. Three years on, nothing feels dated
+              — only more our own.”
+            </p>
+            <span>— A.M., Private collector, London</span>
+          </div>
+          <div class="quote">
+            <p>
+              “Restraint is the rarest luxury. Maison Lumière understands this better than any
+              studio we considered.”
+            </p>
+            <span>— R.&nbsp;K., Chairman, Mumbai</span>
+          </div>
+          <div class="quote">
+            <p>
+              “Every joinery line, every shadow, every door pull — considered. A genuinely
+              architectural practice.”
+            </p>
+            <span>— S.&nbsp;D., Architect, Milan</span>
+          </div>
+          <div class="quotes__nav">
+            <button class="qbtn" data-q="prev" aria-label="Previous">←</button>
+            <div class="quotes__dots" id="qDots"></div>
+            <button class="qbtn" data-q="next" aria-label="Next">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="awards section">
+        <div class="section__head">
+          <span class="section__num">06 — Recognition</span>
+          <h2 class="section__title reveal-words">A practice quietly recognised.</h2>
+        </div>
+        <ul class="awards__list">
+          <li class="reveal"><strong>AD100</strong><span>2024 · 2022</span></li>
+          <li class="reveal">
+            <strong>Dezeen Awards</strong><span>Residence of the Year, 2023</span>
+          </li>
+          <li class="reveal">
+            <strong>Frame Awards</strong><span>Best Use of Material, 2023</span>
+          </li>
+          <li class="reveal">
+            <strong>Wallpaper* Design</strong><span>Best New Studio, 2019</span>
+          </li>
+          <li class="reveal">
+            <strong>Elle Deco Intl.</strong><span>Designer of the Year, 2022</span>
+          </li>
+          <li class="reveal"><strong>IIID Awards</strong><span>Gold, Hospitality 2022</span></li>
+        </ul>
+      </section>
+
+      <!-- FAQ -->
+      <section id="journal" class="faq section">
+        <div class="section__head">
+          <span class="section__num">07 — Enquiries</span>
+          <h2 class="section__title reveal-words">Questions we are often asked.</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item reveal">
+            <summary>What is the typical project size you accept?<i></i></summary>
+            <p>
+              Residential commissions from 4,000 sq ft upward, and selected hospitality projects. We
+              take on no more than ten engagements per year.
+            </p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do you work outside India?<i></i></summary>
+            <p>
+              Yes. Active projects in London, Dubai, Milan, Geneva, Singapore and New York. A senior
+              lead is on site weekly.
+            </p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>How long does a typical residence take?<i></i></summary>
+            <p>
+              From first conversation to handover, twelve to eighteen months for a full-scope villa
+              or penthouse.
+            </p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>How are fees structured?<i></i></summary>
+            <p>
+              A fixed design fee for the studio's intellectual work, plus a transparent procurement
+              model. Shared in full at the second meeting.
+            </p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do you guarantee confidentiality?<i></i></summary>
+            <p>
+              Always. We sign mutual NDAs before discovery and publish work only with explicit
+              consent.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA / CONTACT -->
+      <section id="contact" class="cta section">
+        <div class="cta__inner reveal">
+          <span class="section__num">08 — Begin</span>
+          <h2 class="cta__title">Begin a quiet conversation.</h2>
+          <p>
+            Tell us about the residence you are imagining. We respond within two working days,
+            personally.
+          </p>
+          <form
+            class="cta__form"
+            onsubmit="
+              event.preventDefault();
+              this.querySelector('.cta__sent').classList.add('show');
+              this.reset();
+            "
+          >
+            <div class="row">
+              <label><span>Name</span><input required type="text" placeholder="Your name" /></label>
+              <label
+                ><span>Email</span><input required type="email" placeholder="you@residence.com"
+              /></label>
+            </div>
+            <div class="row">
+              <label
+                ><span>City / Location</span
+                ><input type="text" placeholder="Mumbai, London, Dubai…"
+              /></label>
+              <label
+                ><span>Project type</span>
+                <select>
+                  <option>Villa</option>
+                  <option>Penthouse</option>
+                  <option>Apartment</option>
+                  <option>Hospitality</option>
+                  <option>Commercial</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+            <label
+              ><span>About the project</span
+              ><textarea
+                rows="4"
+                placeholder="A few sentences about the residence, timeline and scope."
+              ></textarea>
+            </label>
+            <button class="btn btn--primary btn--large" type="submit" data-magnetic>
+              <span>Request a consultation</span>
+            </button>
+            <p class="cta__sent">
+              Thank you. A principal will be in touch within two working days.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__brand">
+          <span class="loader__mark">ML</span>
+          <p>
+            Maison Lumière is a luxury residential design atelier with studios in Mumbai and Milan.
+          </p>
+        </div>
+        <div class="foot__col">
+          <h4>Studios</h4>
+          <p>14, Carmichael Road<br />Mumbai 400026</p>
+          <p>Via della Spiga 8<br />Milano 20121</p>
+        </div>
+        <div class="foot__col">
+          <h4>Contact</h4>
+          <p><a href="mailto:studio@maisonlumiere.co">studio@maisonlumiere.co</a></p>
+          <p>+91 22 6000 0000</p>
+        </div>
+        <div class="foot__col">
+          <h4>Follow</h4>
+          <p><a href="#">Instagram</a></p>
+          <p><a href="#">Pinterest</a></p>
+          <p><a href="#">LinkedIn</a></p>
+        </div>
       </div>
-    </a>
-    <a class="card card--wide" href="#" data-tilt>
-      <div class="card__img" style="background:radial-gradient(120% 80% at 30% 30%,#4f86c6,#06152c 75%)"></div>
-      <div class="card__overlay">
-        <div class="card__meta"><span>Hospitality</span><span>Udaipur · 2022</span></div>
-        <h3 class="card__title">Hôtel Particulier — Lake Wing</h3>
-        <p>Twelve suites carved into a 19th-century haveli, restored stone by stone with a contemporary, monastic interior.</p>
-        <span class="card__cta">View project →</span>
+      <div class="foot__base">
+        <span>© Maison Lumière Atelier 2009 — 2026</span>
+        <span>Crafted in Mumbai · Milano</span>
       </div>
-    </a>
-  </div>
-</section>
+    </footer>
 
-<!-- PROCESS -->
-<section id="process" class="process section">
-  <div class="section__head">
-    <span class="section__num">03 — Process</span>
-    <h2 class="section__title reveal-words">Four chapters. One quiet conversation.</h2>
-  </div>
-  <ol class="process__list">
-    <li class="process__item reveal">
-      <span class="process__num">i.</span>
-      <h3>Discovery</h3>
-      <p>A private conversation at your residence. We listen — to how you live, host, retreat, collect.</p>
-    </li>
-    <li class="process__item reveal">
-      <span class="process__num">ii.</span>
-      <h3>Architecture of Intent</h3>
-      <p>A written brief, a material atlas and the first spatial diagrams. Nothing decorative — yet.</p>
-    </li>
-    <li class="process__item reveal">
-      <span class="process__num">iii.</span>
-      <h3>Atelier</h3>
-      <p>Custom joinery, lighting and stone are prototyped in our workshop. Samples travel to you.</p>
-    </li>
-    <li class="process__item reveal">
-      <span class="process__num">iv.</span>
-      <h3>Installation</h3>
-      <p>A single project lead is on site daily. We hand over a home that is fully styled and ready to live in.</p>
-    </li>
-  </ol>
-</section>
-
-<!-- BEFORE / AFTER -->
-<section id="transform" class="transform section">
-  <div class="section__head">
-    <span class="section__num">04 — Transformations</span>
-    <h2 class="section__title reveal-words">Before. And quietly, after.</h2>
-  </div>
-  <div class="compare reveal" id="compare">
-    <div class="compare__img compare__img--before" style="background:linear-gradient(135deg,#3a3a3a,#7a7a7a)"></div>
-    <div class="compare__img compare__img--after" id="compareAfter" style="background:linear-gradient(135deg,#0a2147,#3672c4 60%,#dfe7f2)"></div>
-    <div class="compare__handle" id="compareHandle"><span></span><i></i></div>
-    <span class="compare__tag compare__tag--l">Before</span>
-    <span class="compare__tag compare__tag--r">After</span>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="stats section">
-  <div class="stats__grid">
-    <div class="stat reveal"><span class="stat__num" data-count="147">0</span><span class="stat__label">Residences delivered</span></div>
-    <div class="stat reveal"><span class="stat__num" data-count="22">0</span><span class="stat__label">Cities worldwide</span></div>
-    <div class="stat reveal"><span class="stat__num" data-count="17">0</span><span class="stat__label">International awards</span></div>
-    <div class="stat reveal"><span class="stat__num" data-count="98" data-suffix="%">0</span><span class="stat__label">Referral commissions</span></div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="quotes section">
-  <div class="section__head">
-    <span class="section__num">05 — Voices</span>
-    <h2 class="section__title reveal-words">What our patrons say, quietly.</h2>
-  </div>
-  <div class="quotes__stage" id="quotes">
-    <div class="quote is-active">
-      <p>“They designed a house we did not know we wanted. Three years on, nothing feels dated — only more our own.”</p>
-      <span>— A.M., Private collector, London</span>
-    </div>
-    <div class="quote">
-      <p>“Restraint is the rarest luxury. Maison Lumière understands this better than any studio we considered.”</p>
-      <span>— R.&nbsp;K., Chairman, Mumbai</span>
-    </div>
-    <div class="quote">
-      <p>“Every joinery line, every shadow, every door pull — considered. A genuinely architectural practice.”</p>
-      <span>— S.&nbsp;D., Architect, Milan</span>
-    </div>
-    <div class="quotes__nav">
-      <button class="qbtn" data-q="prev" aria-label="Previous">←</button>
-      <div class="quotes__dots" id="qDots"></div>
-      <button class="qbtn" data-q="next" aria-label="Next">→</button>
-    </div>
-  </div>
-</section>
-
-<!-- AWARDS -->
-<section class="awards section">
-  <div class="section__head">
-    <span class="section__num">06 — Recognition</span>
-    <h2 class="section__title reveal-words">A practice quietly recognised.</h2>
-  </div>
-  <ul class="awards__list">
-    <li class="reveal"><strong>AD100</strong><span>2024 · 2022</span></li>
-    <li class="reveal"><strong>Dezeen Awards</strong><span>Residence of the Year, 2023</span></li>
-    <li class="reveal"><strong>Frame Awards</strong><span>Best Use of Material, 2023</span></li>
-    <li class="reveal"><strong>Wallpaper* Design</strong><span>Best New Studio, 2019</span></li>
-    <li class="reveal"><strong>Elle Deco Intl.</strong><span>Designer of the Year, 2022</span></li>
-    <li class="reveal"><strong>IIID Awards</strong><span>Gold, Hospitality 2022</span></li>
-  </ul>
-</section>
-
-<!-- FAQ -->
-<section id="journal" class="faq section">
-  <div class="section__head">
-    <span class="section__num">07 — Enquiries</span>
-    <h2 class="section__title reveal-words">Questions we are often asked.</h2>
-  </div>
-  <div class="faq__list">
-    <details class="faq__item reveal"><summary>What is the typical project size you accept?<i></i></summary><p>Residential commissions from 4,000 sq ft upward, and selected hospitality projects. We take on no more than ten engagements per year.</p></details>
-    <details class="faq__item reveal"><summary>Do you work outside India?<i></i></summary><p>Yes. Active projects in London, Dubai, Milan, Geneva, Singapore and New York. A senior lead is on site weekly.</p></details>
-    <details class="faq__item reveal"><summary>How long does a typical residence take?<i></i></summary><p>From first conversation to handover, twelve to eighteen months for a full-scope villa or penthouse.</p></details>
-    <details class="faq__item reveal"><summary>How are fees structured?<i></i></summary><p>A fixed design fee for the studio's intellectual work, plus a transparent procurement model. Shared in full at the second meeting.</p></details>
-    <details class="faq__item reveal"><summary>Do you guarantee confidentiality?<i></i></summary><p>Always. We sign mutual NDAs before discovery and publish work only with explicit consent.</p></details>
-  </div>
-</section>
-
-<!-- CTA / CONTACT -->
-<section id="contact" class="cta section">
-  <div class="cta__inner reveal">
-    <span class="section__num">08 — Begin</span>
-    <h2 class="cta__title">Begin a quiet conversation.</h2>
-    <p>Tell us about the residence you are imagining. We respond within two working days, personally.</p>
-    <form class="cta__form" onsubmit="event.preventDefault();this.querySelector('.cta__sent').classList.add('show');this.reset();">
-      <div class="row">
-        <label><span>Name</span><input required type="text" placeholder="Your name" /></label>
-        <label><span>Email</span><input required type="email" placeholder="you@residence.com" /></label>
-      </div>
-      <div class="row">
-        <label><span>City / Location</span><input type="text" placeholder="Mumbai, London, Dubai…" /></label>
-        <label><span>Project type</span>
-          <select>
-            <option>Villa</option><option>Penthouse</option><option>Apartment</option>
-            <option>Hospitality</option><option>Commercial</option><option>Other</option>
-          </select>
-        </label>
-      </div>
-      <label><span>About the project</span><textarea rows="4" placeholder="A few sentences about the residence, timeline and scope."></textarea></label>
-      <button class="btn btn--primary btn--large" type="submit" data-magnetic><span>Request a consultation</span></button>
-      <p class="cta__sent">Thank you. A principal will be in touch within two working days.</p>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="foot">
-  <div class="foot__inner">
-    <div class="foot__brand">
-      <span class="loader__mark">ML</span>
-      <p>Maison Lumière is a luxury residential design atelier with studios in Mumbai and Milan.</p>
-    </div>
-    <div class="foot__col">
-      <h4>Studios</h4>
-      <p>14, Carmichael Road<br/>Mumbai 400026</p>
-      <p>Via della Spiga 8<br/>Milano 20121</p>
-    </div>
-    <div class="foot__col">
-      <h4>Contact</h4>
-      <p><a href="mailto:studio@maisonlumiere.co">studio@maisonlumiere.co</a></p>
-      <p>+91 22 6000 0000</p>
-    </div>
-    <div class="foot__col">
-      <h4>Follow</h4>
-      <p><a href="#">Instagram</a></p>
-      <p><a href="#">Pinterest</a></p>
-      <p><a href="#">LinkedIn</a></p>
-    </div>
-  </div>
-  <div class="foot__base">
-    <span>© Maison Lumière Atelier 2009 — 2026</span>
-    <span>Crafted in Mumbai · Milano</span>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
